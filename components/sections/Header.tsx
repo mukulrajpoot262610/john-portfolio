@@ -16,8 +16,8 @@ const Header = () => {
         </h1>
 
         <p className='text-xl text-gray-200 max-w-3xl mt-4 text-left lg:text-center'>
-          Passionate AI Enthusiast Pursuing Graduate Studies: Driving Innovation
-          in Machine Learning and Deep Learning for Groundbreaking Research and
+          Passionate Enthusiast Pursuing Graduate Studies: Driving Innovation in
+          Machine Learning and Deep Learning for Groundbreaking Research and
           Development
         </p>
 

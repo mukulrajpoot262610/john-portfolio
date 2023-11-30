@@ -43,7 +43,9 @@ const ExperienceCard = ({
           <MapPin className='h-5' />
           <span>{location}</span>
         </div>
-        <p className='text-xs mt-2 lg:text-lg'>{responsibilities}</p>
+        <p className='text-xs mt-2 lg:text-lg leading-relaxed'>
+          {responsibilities}
+        </p>
       </AccordionContent>
     </AccordionItem>
   );

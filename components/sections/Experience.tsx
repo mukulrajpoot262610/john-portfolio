@@ -10,7 +10,7 @@ const Experience = () => {
         EXPERIENCE
       </h1>
       <main className='min-h-[60vh] max-w-6xl mx-auto w-full flex flex-col justify-center items-center gap-4 place-items-center p-10'>
-        <Accordion type='single' collapsible className='w-full'>
+        <Accordion type='single' collapsible className='w-full '>
           {EXPERIENCE.map((exp) => (
             <ExperienceCard
               key={exp.company}
