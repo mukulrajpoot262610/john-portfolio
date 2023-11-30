@@ -5,14 +5,14 @@ import SKILLS from '@/public/skills';
 const About = () => {
   return (
     <div>
-      <h1 className='text-9xl uppercase font-black text-center font-bebas mt-4'>
+      <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas mt-4'>
         About Me
       </h1>
       <div className='bg-black'>
-        <main className='min-h-screen max-w-6xl mx-auto w-full h-full flex flex-col justify-center items-center relative'>
+        <main className='max-w-6xl mx-auto w-full min-h-[70vh] flex flex-col justify-center items-center relative p-6'>
           <div>
             <Tabs defaultValue='story' className='w-full'>
-              <TabsList className='w-2/3 bg-black absolute top-20 -translate-x-1/2 left-1/2'>
+              <TabsList className='p-4 w-full lg:w-2/3 bg-black absolute top-4 lg:top-20 -translate-x-1/2 left-1/2'>
                 <TabsTrigger className='w-full' value='story'>
                   My Story
                 </TabsTrigger>
@@ -27,7 +27,7 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value='story'>
-                <p className='text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-4xl text-white mt-20 lg:leading-relaxed'>
                   Hi, I&apos;m John Ernest—a tech enthusiast and recent graduate
                   in Electronics & Communication from VIT Chennai. I specialize
                   in the fascinating world of Artificial Intelligence, blending
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='experience'>
-                <p className='text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-4xl text-white mt-20 lg:leading-relaxed'>
                   In my professional stint at PricewaterhouseCoopers, I&apos;ve
                   immersed myself in integrating emergent technologies, focusing
                   on generative AI to elevate healthcare diagnostics. From
@@ -49,7 +49,7 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='education'>
-                <p className='text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-4xl text-white mt-20 lg:leading-relaxed'>
                   My technical toolkit includes Python, C++, and expertise in
                   frameworks like TensorFlow and PyTorch. As a recent graduate
                   with a B.Tech in Electronics & Communication from VIT Chennai,
@@ -60,13 +60,13 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='skills'>
-                <p className='text-4xl text-white mt-20 leading-relaxed w-full'>
+                <p className='text-xl lg:text-4xl text-white mt-20 lg:leading-relaxed w-full'>
                   {SKILLS.map((skill) => (
                     <>
-                      <h1 className='text-lg font-bold my-2'>
+                      <h1 className='text-sm font-bold my-2'>
                         {skill.category}
                       </h1>
-                      <div className='flex items-center flex-wrap gap-4 mb-6'>
+                      <div className='flex items-center flex-wrap gap-2 mb-6'>
                         {skill.skills.map((s) => (
                           <p
                             className='text-sm border border-white p-1 px-4 rounded-lg'

@@ -5,10 +5,10 @@ import ProjectCard from '../Card/ProjectCard';
 const Projects = () => {
   return (
     <div className='mb-20'>
-      <h1 className='text-9xl uppercase font-black text-center font-bebas'>
+      <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas'>
         Projects
       </h1>
-      <main className='max-w-7xl mx-auto w-full flex flex-wrap justify-center items-center gap-4 place-items-center mt-24'>
+      <main className='max-w-7xl mx-auto w-full flex flex-wrap justify-center items-center gap-4 place-items-center mt-12'>
         {PROJECTS.map((project) => (
           <ProjectCard
             key={project.id}

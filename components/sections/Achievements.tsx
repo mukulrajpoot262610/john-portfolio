@@ -6,12 +6,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 const Achievements = () => {
   return (
     <div>
-      <h1 className='text-9xl uppercase font-black text-center font-bebas'>
+      <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas'>
         Achievements
       </h1>
-      <main className='min-h-screen w-full mt-24 relative'>
+      <main className='w-full mt-24 relative'>
         <Tabs defaultValue='2022' className='w-full pt-20'>
-          <TabsList className='w-2/3 bg-black border border-black absolute top-0 -translate-x-1/2 left-1/2'>
+          <TabsList className='w-full lg:w-2/3 bg-black border border-black absolute top-0 -translate-x-1/2 left-1/2'>
             <TabsTrigger className='w-full' value='2022'>
               2022
             </TabsTrigger>

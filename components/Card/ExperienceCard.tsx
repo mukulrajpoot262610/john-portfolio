@@ -28,20 +28,22 @@ const ExperienceCard = ({
 }: WorkExperienceProps) => {
   return (
     <AccordionItem value={id}>
-      <AccordionTrigger className='flex justify-between items-center w-full text-xl'>
-        <p className='w-1/2 text-start'>
-          {position} @ {company}
-        </p>
-        <p className='text-end w-1/2 pr-10'>
-          {startDate} - {endDate}
-        </p>
+      <AccordionTrigger className='w-full text-sm lg:text-xl'>
+        <div className='flex lg:flex-row flex-col justify-between items-start lg:items-center w-full'>
+          <p className='w-full lg:w-2/3 text-start'>
+            {position} @ {company}
+          </p>
+          <p className='text-left lg:text-end w-full lg:w-1/3 pr-10'>
+            {startDate} - {endDate}
+          </p>
+        </div>
       </AccordionTrigger>
-      <AccordionContent className='bg-black text-white rounded-lg p-6'>
-        <div className='p-2 flex items-center gap-1'>
+      <AccordionContent className='bg-black text-white rounded-lg p-4 lg:p-6'>
+        <div className='flex items-center gap-1'>
           <MapPin className='h-5' />
           <span>{location}</span>
         </div>
-        <p className='p-2 text-lg'>{responsibilities}</p>
+        <p className='text-xs mt-2 lg:text-lg'>{responsibilities}</p>
       </AccordionContent>
     </AccordionItem>
   );
