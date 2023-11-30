@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 @layer base {
   :root {
@@ -78,23 +85,57 @@
 
 .mousey {
   width: 3px;
-  padding: 10px 15px;
+  padding: 3px 10px;
   height: 35px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
 }
 
-.scroller {
+.scrollermouse {
   width: 3px;
   height: 10px;
   border-radius: 25%;
-  background-color: #000;
+  background-color: #fff;
   animation-name: scroll;
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(.15, .41, .69, .94);
   animation-iteration-count: infinite;
+}
+
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 15 em;
+}
+
+.scroller>span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -1.2em;
+  }
+
+  50% {
+    top: -2.4em;
+  }
+
+  75% {
+    top: -3.6em;
+  }
 }
 
 @keyframes scroll {

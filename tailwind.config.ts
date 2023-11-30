@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        bebas: 'Bebas Neue',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
