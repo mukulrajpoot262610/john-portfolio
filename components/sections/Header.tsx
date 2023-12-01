@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
-import { Lightbulb, Mail, Paperclip } from 'lucide-react';
+import { Lightbulb, Paperclip } from 'lucide-react';
 import Link from 'next/link';
 
 const Header = () => {
@@ -22,9 +22,14 @@ const Header = () => {
         </p>
 
         <div className='my-12 flex gap-4 flex-col lg:flex-row'>
-          <Button variant='outline'>
-            <Paperclip className='mr-2 h-4 w-4' /> Download CV
-          </Button>
+          <a
+            href='https://drive.google.com/file/d/1nnsZBhslLUvYJUaqBLHkQbwII81DqSQV/view?usp=sharing'
+            target='_blank'
+          >
+            <Button variant='outline'>
+              <Paperclip className='mr-2 h-4 w-4' /> Download CV
+            </Button>
+          </a>
           <Link href='#projects'>
             <Button className='border-white border'>
               <Lightbulb className='mr-2 h-4 w-4' /> Check my Projects

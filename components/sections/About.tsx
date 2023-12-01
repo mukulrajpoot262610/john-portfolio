@@ -27,7 +27,7 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value='story'>
-                <p className='text-xl lg:text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
                   Hi, I&apos;m John Ernest—a tech enthusiast and recent graduate
                   in Electronics & Communication from VIT Chennai. I specialize
                   in the fascinating world of Artificial Intelligence, blending
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='experience'>
-                <p className='text-xl lg:text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
                   In my professional stint at PricewaterhouseCoopers, I&apos;ve
                   immersed myself in integrating emergent technologies, focusing
                   on generative AI to elevate healthcare diagnostics. From
@@ -49,7 +49,7 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='education'>
-                <p className='text-xl lg:text-4xl text-white mt-20 leading-relaxed'>
+                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
                   My technical toolkit includes Python, C++, and expertise in
                   frameworks like TensorFlow and PyTorch. As a recent graduate
                   with a B.Tech in Electronics & Communication from VIT Chennai,
@@ -60,7 +60,7 @@ const About = () => {
                 </p>
               </TabsContent>
               <TabsContent value='skills'>
-                <p className='text-xl lg:text-4xl text-white mt-20 lg:leading-relaxed w-full'>
+                <p className='text-xl lg:text-4xl text-white mt-28 lg:leading-relaxed w-full'>
                   {SKILLS.map((skill) => (
                     <>
                       <h1 className='text-sm font-bold my-2'>
