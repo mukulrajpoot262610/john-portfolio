@@ -28,12 +28,13 @@ const About = () => {
               </TabsList>
               <TabsContent value='story'>
                 <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
-                  Hi, I&apos;m John Ernest—a tech enthusiast and recent graduate
-                  in Electronics & Communication from VIT Chennai. I specialize
-                  in the fascinating world of Artificial Intelligence, blending
-                  my passion for machine learning with real-world
-                  problem-solving. My journey began with a deep curiosity for
-                  the potential of technology to transform the world.
+                  Hi, I&apos;m John Rohit Ernest — a tech enthusiast and recent
+                  graduate in Electronics & Communication from VIT Chennai. I
+                  specialize in the fascinating world of Artificial
+                  Intelligence, blending my passion for machine learning with
+                  real-world problem-solving. My journey began with a deep
+                  curiosity for the potential of technology to transform the
+                  world.
                 </p>
               </TabsContent>
               <TabsContent value='experience'>

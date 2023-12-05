@@ -29,11 +29,11 @@ const ExperienceCard = ({
   return (
     <AccordionItem value={id}>
       <AccordionTrigger className='w-full text-sm lg:text-xl'>
-        <div className='flex lg:flex-row flex-col justify-between items-start lg:items-center w-full'>
+        <div className='flex lg:flex-row flex-col justify-between items-start lg:items-center w-full text-xl'>
           <p className='w-full lg:w-2/3 text-start'>
             {position} @ {company}
           </p>
-          <p className='text-left lg:text-end w-full lg:w-1/3 pr-10'>
+          <p className='text-left lg:text-end w-full lg:w-1/3 pr-10 font-normal text-lg'>
             {startDate} - {endDate}
           </p>
         </div>

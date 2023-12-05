@@ -7,12 +7,12 @@ const Header = () => {
   return (
     <div className='h-screen relative'>
       <img
-        src='/bg.jpg'
-        className='absolute top-0 left-0 h-full w-full z-0 select-none bg-cover object-cover'
+        src='/bg1.jpg'
+        className='absolute top-0 left-0 h-full w-full z-0 select-none bg-cover object-cover brightness-50'
       />
       <main className='max-w-6xl mx-auto w-full h-full flex flex-col justify-center items-start lg:items-center pt-16 z-20 relative p-10'>
         <h1 className='text-7xl lg:text-9xl font-bold my-4 text-white font-bebas text-left'>
-          J. JOHN ROHIT ERNEST
+          JOHN ROHIT ERNEST
         </h1>
 
         <p className='text-xl text-gray-200 max-w-3xl mt-4 text-left lg:text-center'>
