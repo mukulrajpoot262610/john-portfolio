@@ -29,11 +29,11 @@ const ExperienceCard = ({
   return (
     <AccordionItem value={id}>
       <AccordionTrigger className='w-full text-sm lg:text-xl'>
-        <div className='flex lg:flex-row flex-col justify-between items-start lg:items-center w-full text-xl'>
+        <div className='flex lg:flex-row flex-col justify-between items-start lg:items-center w-full text-base lg:text-xl'>
           <p className='w-full lg:w-2/3 text-start'>
             {position} @ {company}
           </p>
-          <p className='text-left lg:text-end w-full lg:w-1/3 pr-10 font-normal text-lg'>
+          <p className='text-left lg:text-end w-full lg:w-1/3 pr-10 font-normal'>
             {startDate} - {endDate}
           </p>
         </div>
@@ -43,7 +43,7 @@ const ExperienceCard = ({
           <MapPin className='h-5' />
           <span>{location}</span>
         </div>
-        <p className='text-xs mt-2 lg:text-lg leading-relaxed'>
+        <p className='text-sm mt-2 lg:text-lg leading-relaxed'>
           {responsibilities}
         </p>
       </AccordionContent>

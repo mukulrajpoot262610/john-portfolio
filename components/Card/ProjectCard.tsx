@@ -60,13 +60,13 @@ const ProjectCard = ({
                 <span className='w-3 h-3 bg-green-500 rounded-full'></span>
               </AlertDialogCancel>
             </div>
-            <AlertDialogTitle className='text-2xl font-bold mt-8'>
-              {title}
-            </AlertDialogTitle>
-            <AlertDialogDescription className='text-lg'>
-              {summary}
-            </AlertDialogDescription>
           </AlertDialogHeader>
+          <AlertDialogTitle className='text-2xl font-bold'>
+            {title}
+          </AlertDialogTitle>
+          <AlertDialogDescription className='text-sm lg:text-lg'>
+            {summary}
+          </AlertDialogDescription>
         </AlertDialogContent>
       </AlertDialog>
     </div>
