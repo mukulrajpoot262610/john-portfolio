@@ -2,16 +2,14 @@ import React from 'react';
 
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
-  AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
-import { Button } from '../ui/button';
+import { Cross } from 'lucide-react';
 
 interface ProjectCardProps {
   id: number;
@@ -53,11 +51,14 @@ const ProjectCard = ({
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <div className='flex'>
+            <div className='flex justify-between items-center'>
               <AlertDialogCancel className='border-0 m-0 p-0'>
                 <span className='w-3 h-3 bg-red-500 rounded-full cursor-pointer'></span>
                 <span className='w-3 h-3 mx-2 bg-yellow-500 rounded-full'></span>
                 <span className='w-3 h-3 bg-green-500 rounded-full'></span>
+              </AlertDialogCancel>
+              <AlertDialogCancel className='border-0 m-0 p-0'>
+                <Cross className='rotate-45' />
               </AlertDialogCancel>
             </div>
           </AlertDialogHeader>

@@ -31,12 +31,6 @@ const Footer = () => {
           <ArrowRight className='group-hover:text-black text-white' />
         </div>
       </a>
-      <div className='flex  border-white border-y hover:bg-white group items-center w-screen p-6 lg:p-12 justify-between cursor-pointer'>
-        <h1 className='text-2xl lg:text-5xl font-bold text-white group-hover:text-black'>
-          READ.CV
-        </h1>
-        <ArrowRight className='group-hover:text-black text-white' />
-      </div>
     </div>
   );
 };
