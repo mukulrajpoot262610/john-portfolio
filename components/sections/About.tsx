@@ -20,9 +20,9 @@ const About = () => {
       </h1>
       <div className='w-full bg-black  bg-grid-white/[0.2] relative flex items-center justify-center'>
         <div className='absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
-        <main className='max-w-6xl mx-auto w-full min-h-[80vh] flex flex-col justify-center items-center relative p-6'>
+        <main className='max-w-6xl mx-auto w-full min-h-[60vh] flex flex-col justify-start items-center relative p-6'>
           <div>
-            <Tabs defaultValue='story' className='w-full pt-10 lg:pt-16'>
+            <Tabs defaultValue='story' className='w-full pt-10 lg:pt-24'>
               <TabsList className='p-4 w-full lg:w-2/3 bg-black absolute top-8 lg:top-12 -translate-x-1/2 left-1/2'>
                 <TabsTrigger className='w-full' value='story'>
                   My Story
@@ -47,7 +47,7 @@ const About = () => {
                 <TextGenerateEffect words={education} />
               </TabsContent>
               <TabsContent value='skills'>
-                <p className='text-xl lg:text-4xl text-white mt-28 lg:leading-relaxed w-full'>
+                <p className='text-xl lg:text-4xl text-white lg:leading-relaxed w-full'>
                   {SKILLS.map((skill) => (
                     <>
                       <h1 className='text-sm font-bold my-2'>

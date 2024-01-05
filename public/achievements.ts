@@ -30,7 +30,7 @@ const ACHIEVEMENTS = [
   {
     year: 2021,
     id: 5,
-    achievement: 'HackerRank Problem Solving - 5 star, Oct 2021',
+    achievement: 'HackerRank Problem Solving - 5 star',
     organization: 'HackerRank',
   },
   {

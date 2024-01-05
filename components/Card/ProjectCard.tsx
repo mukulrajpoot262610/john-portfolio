@@ -11,6 +11,12 @@ import {
 } from '@/components/ui/alert-dialog';
 import { Cross } from 'lucide-react';
 
+import {
+  GlowingStarsBackgroundCard,
+  GlowingStarsDescription,
+  GlowingStarsTitle,
+} from '../animation/glowingStars';
+
 interface ProjectCardProps {
   id: number;
   title: string;
@@ -31,32 +37,23 @@ const ProjectCard = ({
   image,
 }: ProjectCardProps) => {
   return (
-    <div className='border h-64 overflow-hidden w-96 p-4 rounded-lg hover:bg-black group'>
-      <div className='justify-between items-center flex bg-frosted'>
-        <div className='flex'>
-          <span className='w-3 h-3 bg-red-500 rounded-full cursor-pointer'></span>
-          <span className='w-3 h-3 mx-2 bg-yellow-500 rounded-full'></span>
-          <span className='w-3 h-3 bg-green-500 rounded-full'></span>
-        </div>
-      </div>
-
+    <div className='border overflow-hidden h-72 w-96 rounded-lg group'>
       <AlertDialog>
-        <AlertDialogTrigger asChild>
-          <div>
-            <h1 className='text-lg lg:text-2xl font-bold my-4 group-hover:text-white'>
+        <AlertDialogTrigger className='w-full text-left'>
+          <GlowingStarsBackgroundCard>
+            <GlowingStarsTitle className='text-xl mt-2'>
               {title}
-            </h1>
-            <p className='group-hover:text-white line-clamp-4'>{summary}</p>
-          </div>
+            </GlowingStarsTitle>
+            <div className='flex justify-between items-end'>
+              <GlowingStarsDescription className='text-sm line-clamp-4 mt-2'>
+                {summary}
+              </GlowingStarsDescription>
+            </div>
+          </GlowingStarsBackgroundCard>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <div className='flex justify-between items-center'>
-              <AlertDialogCancel className='border-0 m-0 p-0'>
-                <span className='w-3 h-3 bg-red-500 rounded-full cursor-pointer'></span>
-                <span className='w-3 h-3 mx-2 bg-yellow-500 rounded-full'></span>
-                <span className='w-3 h-3 bg-green-500 rounded-full'></span>
-              </AlertDialogCancel>
+            <div className='flex justify-end items-center'>
               <AlertDialogCancel className='border-0 m-0 p-0'>
                 <Cross className='rotate-45' />
               </AlertDialogCancel>
@@ -65,7 +62,7 @@ const ProjectCard = ({
           <AlertDialogTitle className='text-2xl font-bold'>
             {title}
           </AlertDialogTitle>
-          <AlertDialogDescription className='text-sm lg:text-lg'>
+          <AlertDialogDescription className='text-sm lg:text-base'>
             {summary}
           </AlertDialogDescription>
         </AlertDialogContent>
