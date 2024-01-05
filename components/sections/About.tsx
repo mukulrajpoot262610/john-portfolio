@@ -47,7 +47,7 @@ const About = () => {
                 <TextGenerateEffect words={education} />
               </TabsContent>
               <TabsContent value='skills'>
-                <p className='text-xl lg:text-4xl text-white lg:leading-relaxed w-full grid grid-cols-3 gap-2'>
+                <p className='text-xl lg:text-4xl text-white lg:leading-relaxed w-full grid grid-cols-1 lg:grid-cols-3 gap-2'>
                   {SKILLS.map((skill) => (
                     <div key={skill.id}>
                       <h1 className='text-sm font-bold my-2'>
