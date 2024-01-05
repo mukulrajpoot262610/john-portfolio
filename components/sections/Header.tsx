@@ -15,10 +15,11 @@ const Header = () => {
           JOHN ROHIT ERNEST
         </h1>
 
-        <p className='text-xl text-gray-200 max-w-3xl mt-4 text-left lg:text-center'>
-          Passionate Enthusiast Pursuing Graduate Studies: Driving Innovation in
-          Machine Learning and Deep Learning for Groundbreaking Research and
-          Development
+        <p className='text-xl text-gray-200 max-w-4xl mt-4 text-left lg:text-center'>
+          Leveraging my passion for machine learning and deep learning to
+          contribute to groundbreaking research and development. Seeking an
+          opportunity to expand my expertise and aiming to be at the forefront
+          of <span className='font-bold'>AI advancement&apos;s</span>
         </p>
 
         <div className='my-12 flex gap-4 flex-col lg:flex-row'>
