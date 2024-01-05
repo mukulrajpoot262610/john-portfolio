@@ -4,7 +4,7 @@ import ProjectCard from '../Card/ProjectCard';
 
 const Projects = () => {
   return (
-    <div className='mb-20'>
+    <div className='my-20'>
       <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas'>
         Projects
       </h1>

@@ -15,7 +15,7 @@ const Header = () => {
           JOHN ROHIT ERNEST
         </h1>
 
-        <p className='text-lg lg:text-xl text-gray-200 max-w-4xl mt-4 text-left lg:text-center'>
+        <p className='text-lg lg:text-2xl text-gray-200 max-w-4xl mt-4 text-left lg:text-center font-bold'>
           Leveraging my passion for machine learning and deep learning to
           contribute to groundbreaking research and development. Seeking an
           opportunity in Master&apos;s to expand my expertise and aiming to be

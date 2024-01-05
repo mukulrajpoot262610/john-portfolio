@@ -39,6 +39,11 @@ const SKILLS = [
     category: 'Deep Learning Frameworks',
     skills: ['Tensorflow', 'Pytorch', 'Keras'],
   },
+  {
+    id: 8,
+    category: 'Gen AI',
+    skills: ['Large Language Models'],
+  },
 ];
 
 export default SKILLS;
