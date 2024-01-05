@@ -1,8 +1,18 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import SKILLS from '@/public/skills';
+import { TextGenerateEffect } from '../animation/textGeneration';
 
 const About = () => {
+  const story =
+    "Hi, I'm John Rohit Ernest — a tech enthusiast and recent graduate in Electronics & Communication from VIT Chennai. I specialize in the fascinating world of Artificial Intelligence, blending my passion for machine learning with real-world problem-solving. My journey began with a deep curiosity for the potential of technology to transform the world.";
+
+  const experience =
+    "In my professional stint at PricewaterhouseCoopers, I've immersed myself in integrating emergent technologies, focusing on generative AI to elevate healthcare diagnostics. From automating medical image captions to predicting water quality using ML algorithms, I thrive on challenges that bridge technology with societal impact. Certified in AI for Medical Diagnosis and armed with diverse experiences, I'm poised at the forefront of cutting-edge technology.";
+
+  const education =
+    "My technical toolkit includes Python, C++, and expertise in frameworks like TensorFlow and PyTorch. As a recent graduate with a B.Tech in Electronics & Communication from VIT Chennai, I've led workshops at IEEE and Google Developer Student’s Club, demystifying AI for students. Join me on this journey where curiosity meets innovation, shaping a future where AI not only transforms but also betters our world.";
+
   return (
     <div>
       <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas mt-4'>
@@ -27,38 +37,13 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value='story'>
-                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
-                  Hi, I&apos;m John Rohit Ernest — a tech enthusiast and recent
-                  graduate in Electronics & Communication from VIT Chennai. I
-                  specialize in the fascinating world of Artificial
-                  Intelligence, blending my passion for machine learning with
-                  real-world problem-solving. My journey began with a deep
-                  curiosity for the potential of technology to transform the
-                  world.
-                </p>
+                <TextGenerateEffect words={story} />
               </TabsContent>
               <TabsContent value='experience'>
-                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
-                  In my professional stint at PricewaterhouseCoopers, I&apos;ve
-                  immersed myself in integrating emergent technologies, focusing
-                  on generative AI to elevate healthcare diagnostics. From
-                  automating medical image captions to predicting water quality
-                  using ML algorithms, I thrive on challenges that bridge
-                  technology with societal impact. Certified in AI for Medical
-                  Diagnosis and armed with diverse experiences, I&apos;m poised
-                  at the forefront of cutting-edge technology.
-                </p>
+                <TextGenerateEffect words={experience} />
               </TabsContent>
               <TabsContent value='education'>
-                <p className='text-xl lg:text-3xl text-white mt-20 leading-relaxed lg:leading-relaxed'>
-                  My technical toolkit includes Python, C++, and expertise in
-                  frameworks like TensorFlow and PyTorch. As a recent graduate
-                  with a B.Tech in Electronics & Communication from VIT Chennai,
-                  I&apos;ve led workshops at IEEE and Google Developer Student’s
-                  Club, demystifying AI for students. Join me on this journey
-                  where curiosity meets innovation, shaping a future where AI
-                  not only transforms but also betters our world.
-                </p>
+                <TextGenerateEffect words={education} />
               </TabsContent>
               <TabsContent value='skills'>
                 <p className='text-xl lg:text-4xl text-white mt-28 lg:leading-relaxed w-full'>
