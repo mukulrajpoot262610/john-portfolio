@@ -18,11 +18,12 @@ const About = () => {
       <h1 className='text-7xl lg:text-9xl uppercase font-black text-center font-bebas mt-4'>
         About Me
       </h1>
-      <div className='bg-black'>
-        <main className='max-w-6xl mx-auto w-full min-h-[70vh] flex flex-col justify-center items-center relative p-6'>
+      <div className='w-full bg-black  bg-grid-white/[0.2] relative flex items-center justify-center'>
+        <div className='absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
+        <main className='max-w-6xl mx-auto w-full min-h-[80vh] flex flex-col justify-center items-center relative p-6'>
           <div>
-            <Tabs defaultValue='story' className='w-full'>
-              <TabsList className='p-4 w-full lg:w-2/3 bg-black absolute top-4 lg:top-20 -translate-x-1/2 left-1/2'>
+            <Tabs defaultValue='story' className='w-full pt-10 lg:pt-16'>
+              <TabsList className='p-4 w-full lg:w-2/3 bg-black absolute top-8 lg:top-12 -translate-x-1/2 left-1/2'>
                 <TabsTrigger className='w-full' value='story'>
                   My Story
                 </TabsTrigger>

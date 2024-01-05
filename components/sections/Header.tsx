@@ -11,15 +11,16 @@ const Header = () => {
         className='absolute top-0 left-0 h-full w-full z-0 select-none bg-cover object-cover brightness-50'
       />
       <main className='max-w-6xl mx-auto w-full h-full flex flex-col justify-center items-start lg:items-center pt-16 z-20 relative p-10'>
-        <h1 className='text-7xl lg:text-9xl font-bold my-4 text-white font-bebas text-left'>
+        <h1 className='text-7xl lg:text-[140px] font-bold my-2 text-white font-bebas text-left'>
           JOHN ROHIT ERNEST
         </h1>
 
-        <p className='text-xl text-gray-200 max-w-4xl mt-4 text-left lg:text-center'>
+        <p className='text-lg lg:text-xl text-gray-200 max-w-4xl mt-4 text-left lg:text-center'>
           Leveraging my passion for machine learning and deep learning to
           contribute to groundbreaking research and development. Seeking an
-          opportunity to expand my expertise and aiming to be at the forefront
-          of <span className='font-bold'>AI advancement&apos;s</span>
+          opportunity in Master&apos;s to expand my expertise and aiming to be
+          at the forefront of{' '}
+          <span className='font-bold'>AI advancement&apos;s</span>
         </p>
 
         <div className='my-12 flex gap-4 flex-col lg:flex-row'>
